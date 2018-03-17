@@ -1,0 +1,39 @@
+server:
+    port: 8081
+    context-path: /ui
+    session:
+      cookie:
+        name: UISESSION
+    use-forward-headers: true
+    
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: example-client-id
+      clientSecret: secret
+      access-token-uri: http://port-8082.Ubuntu14-04-reinierrg92695293.codeanyapp.com/auth/token
+      user-authorization-uri: http://port-8082.Ubuntu14-04-reinierrg92695293.codeanyapp.com/auth/authorize
+#      user-authorization-uri: http://localhost:8082/auth/authorize
+#      access-token-uri: http://localhost:8082/auth/token
+#      access-token-uri: http://ubuntu14-04-reinierrg92695293.codeanyapp.com:8082/auth/token
+#     user-authorization-uri: http://ubuntu14-04-reinierrg92695293.codeanyapp.com:8082/auth/authorize
+#      pre-established-redirect-uri: http://ubuntu14-04-reinierrg92695293.codeanyapp.com:8081/ui/login
+#      registered-redirect-uri: http://ubuntu14-04-reinierrg92695293.codeanyapp.com:8081/ui/login
+#      use-current-uri: false
+    resource:
+      #userInfoUri: http://agesdocker.newit.cl:54781/auth/user_info
+      #user-info-uri: http://ubuntu14-04-reinierrg92695293.codeanyapp.com:8082/auth/user_info
+#      user-info-uri: http://localhost:8082/auth/user_info
+      user-info-uri: http://port-8082.Ubuntu14-04-reinierrg92695293.codeanyapp.com/auth/user_info
+      
+spring:
+  thymeleaf:
+    cache: false
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

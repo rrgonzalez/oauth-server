@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.security.oauth2.client.registration",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.security.oauth2.client.registration'"
+  },
+  {
+    "name": "security.oauth2.client.registration.portal-pagos.client-id",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.client.registration.portal-pagos.client-id'"
+  }
+]}

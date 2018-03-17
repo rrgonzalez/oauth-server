@@ -1,0 +1,23 @@
+server:
+  contextPath: /auth
+  port: 443
+  httpPort: 80
+  httpConfig: default
+  use-forward-headers: true
+  ssl:
+    key-store-type: PKCS12
+    key-store: classpath:keystore.p12
+    key-store-password: N3w1tP4ss
+    key-alias: newit.cl
+security:
+  require-ssl: true
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      userInfoUri: https://agesdocker.newit.cl:54782/auth/user_info
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

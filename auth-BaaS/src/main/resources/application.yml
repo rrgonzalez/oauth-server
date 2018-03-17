@@ -1,0 +1,28 @@
+server:
+  contextPath: /auth
+  port: 8082
+#  httpPort: 8082
+#  httpConfig: default
+  use-forward-headers: true
+  
+#  ssl:
+#    key-store-type: PKCS12
+#    key-store: classpath:keystore.p12
+#    key-store-password: N3w1tP4ss
+#    key-alias: newit.cl
+security:
+#  require-ssl: true
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      user-info-uri: http://port-8082.Ubuntu14-04-reinierrg92695293.codeanyapp.com/auth/user_info
+#      userInfoUri: http://localhost:8082/auth/user_info
+#      user-info-uri: http://ubuntu14-04-reinierrg92695293.codeanyapp.com:8082/auth/user_info
+#      user-info-uri: http://localhost:8082/auth/user_info
+      
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
