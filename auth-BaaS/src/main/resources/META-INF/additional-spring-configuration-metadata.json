@@ -5,8 +5,8 @@
     "description": "A description for 'spring.security.oauth2.client.registration'"
   },
   {
-    "name": "security.oauth2.client.registration.portal-pagos.client-id",
+    "name": "security.oauth2.client.registration.client-id",
     "type": "java.lang.String",
-    "description": "A description for 'security.oauth2.client.registration.portal-pagos.client-id'"
+    "description": "A description for 'security.oauth2.client.registration.client-id'"
   }
 ]}

@@ -28,10 +28,6 @@ public class OauthServerConfig extends AuthorizationServerConfigurerAdapter {
           .withClient("portal-pagos-id")
           .secret("secret")
           .redirectUris(
-        		  "https://agesdocker.newit.cl:54783/",
-        		  "https://agesdocker.newit.cl:54783/login",
-        		  "https://agesdocker.newit.cl:54783/v1", 
-        		  "https://agesdocker.newit.cl:54783/v1/login", 
         		  "http://10.42.0.206:8080/v1", 
         		  "http://10.42.0.206:8080/v1/login")
           .authorizedGrantTypes("password", "refresh_token", "implicit", "authorization_code")
